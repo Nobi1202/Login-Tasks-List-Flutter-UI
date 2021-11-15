@@ -27,7 +27,7 @@ class MyPainter extends CustomPainter {
         height: size.height,
         width: size.width,
       ),
-      math.pi/2,
+      -math.pi,
       math.pi,
       false,
       paint,
