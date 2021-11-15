@@ -40,9 +40,9 @@ class GetStartedScreen extends StatelessWidget {
                   height: 30,
                 ),
                 Text(
-                  "Lorem ipsum dolor sit amet,\n"
-                  "consectetur adipiscing elit. Interdum\n"
-                  " dictum tempus, interdum at dignissim\n"
+                  "Lorem ipsum dolor sit amet,"
+                  "consectetur adipiscing elit. Interdum"
+                  " dictum tempus, interdum at dignissim"
                   " metus. Ultricies sed nunc.",
                   style: TextStyle(
                     color: Colors.black,
