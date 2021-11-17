@@ -55,10 +55,23 @@ class SignInScreen extends StatelessWidget {
                 const SizedBox(
                   height: 25,
                 ),
-                const Center(
-                  child: Text(
-                    "Forgot Password",
-                    style: kTextStylePoppinsBlueWeight400,
+                Center(
+                  child: InkWell(
+                    onTap: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          backgroundColor: Colors.orange,
+                          content: Text(
+                            "Processing Data",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      "Forgot Password",
+                      style: kTextStylePoppinsBlueWeight400,
+                    ),
                   ),
                 ),
                 Padding(
