@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:login_tasks_list/components/color.dart';
+import 'package:login_tasks_list/dashboard/sign_up_screen.dart';
 import 'package:login_tasks_list/widgets/stack_widget.dart';
+import 'package:login_tasks_list/widgets/text_button.dart';
 
 class GetStartedScreen extends StatelessWidget {
   const GetStartedScreen({Key? key}) : super(key: key);
@@ -60,25 +61,11 @@ class GetStartedScreen extends StatelessWidget {
           const Spacer(),
           Padding(
             padding: const EdgeInsets.only(left: 26, right: 24, bottom: 94),
-            child: SizedBox(
-              height: 62,
-              width: double.infinity,
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: AppColors.bLightBlueColor,
-                ),
-                child: const Text(
-                  "Get Started",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18,
-                  ),
-                ),
-                onPressed: () {},
-              ),
-            ),
+            child: TextButtonWidget(
+                onTap: () {
+                  Navigator.of(context).pushNamed(SignUpScreen.routeName);
+                },
+                label: 'Get Started'),
           ),
         ],
       ),
