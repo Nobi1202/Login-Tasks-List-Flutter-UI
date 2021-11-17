@@ -8,6 +8,13 @@ const kTextStylePoppinsWeight600 = TextStyle(
   fontSize: 18,
 );
 
+const kTextStylePoppinsWeight600Size12 = TextStyle(
+  color: Colors.black,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w600,
+  fontSize: 12,
+);
+
 const kTextStylePoppinsWeight700 = TextStyle(
   color: Colors.black,
   fontFamily: 'Poppins',
