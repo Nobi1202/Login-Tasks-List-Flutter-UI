@@ -23,6 +23,13 @@ const kTextStylePoppinsBlueWeight700 = TextStyle(
   fontSize: 14,
 );
 
+const kTextStylePoppinsBlueWeight400 = TextStyle(
+  color: AppColors.bBlueColor,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+  fontSize: 14,
+);
+
 const kTextStyleWhitePoppinsWeight600 = TextStyle(
   color: Colors.white,
   fontFamily: 'Poppins',
